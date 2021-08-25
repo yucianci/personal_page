@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --dark-color: #333;
-  --gray-color: rgba(51, 51, 51, 0.39);
-  --light-color: #d1d1d1;
-  --success-color: #27ae60;
+  --dark: #2d3436;
+  --gray: rgba(51, 51, 51, 0.39);
+  --light-gray: rgba(119, 119, 119, 0.514);
+  --light: #d1d1d1;
+  --green: #27ae60;
 }
 
 * {
@@ -23,34 +24,152 @@ a {
   text-decoration: none;
 }
 
-header {
-  background: var(--dark-color);
-  padding: 16px 24px;
+h1 {
+  color: #fff;
+  padding: 0px 64px;
+  font-size: 2.5rem;
 }
 
-header nav {
+body {
+  background-image: linear-gradient(to bottom, #2d3436, #323739, #363a3c, #3b3d3e, #3f4041);
+}
+
+header {
+  background: transparent;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+header nav ul {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.navbar {
-  display: flex;
+  justify-content: center;
 }
 
 header li a {
-  color: var(--light-color);
-  padding: 0 12px;
-  transition: filter 0.4s;
+  position: relative;
+  color: var(--light);
+  padding: 0 22px;
 }
 
-header li a:hover {
-  filter: brightness(0.6);
+header li a::after{
+  content: '';
+  width: 0%;
+  height: 1px;
+  background: var(--green);
+  position: absolute;
+  top: 25px; 
+  left: 50%;
+  transition: all .7s ease;
+}
+
+header li a:hover::after{
+  left: 20%;
+  width: 60%;
 }
 
 main {
-  padding-bottom: 24px;
+  height: 100%;
+  padding-bottom: 113px;
+}
+
+.about__content {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__content section{
+  text-align: center;
+  width: 50%;
+}
+
+.about__carrer {
+  color: var(--green);
+  font: 100;
+}
+
+.description {
+  color: #fff;
+  line-height: 1.45rem;
+}
+
+.description__icons button {
+  border: none;
+  margin: 36px 24px;
+  border-radius: 100%;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__border {
+  position: absolute;
+  top: 40px;
+  left: 158px;
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(to right top, #1f5e87, #194e6f, #143e58, #102f43, #0b202e);
+  border-radius: 34% 66% 50% 50% / 90% 41% 59% 10%;
+}
+
+.geometry.left{
+  z-index: 2;
+  position: absolute;
+  right: 370px;
+  top: -25px;
+  height: 390px;
+  width: 8px;
+  background-image: linear-gradient(to right top, #ffffff, #e7e6e8, #d1cdd0, #bdb5b7, #a89d9d);
+  border-radius: 25px 0 0 25px;
+}
+
+.geometry.top{
+  z-index: 2;
+  position: absolute;
+  right: 86px;
+  top: -25px;
+  height: 8px;
+  width: 290px;
+  background-image: linear-gradient(to right top, #ffffff, #e7e6e8, #d1cdd0, #bdb5b7, #a89d9d);
+  border-radius: 25px 25px 0 0 ;
+}
+
+.geometry.right{
+  z-index: 2;
+  position: absolute;
+  right: 85px;
+  top: -25px;
+  height: 390px;
+  width: 8px;
+  background-image: linear-gradient(to right top, #ffffff, #e7e6e8, #d1cdd0, #bdb5b7, #a89d9d);
+  border-radius: 0px 25px 25px 0;
+}
+
+.geometry.bottom{
+  z-index: 2;
+  position: absolute;
+  right: 86px;
+  bottom: 34px;
+  height: 8px;
+  width: 290px;
+  background-image: linear-gradient(to right top, #ffffff, #e7e6e8, #d1cdd0, #bdb5b7, #a89d9d);
+  border-radius: 0px 0px 25px 25px;
+}
+
+.profile__image {
+  margin: 30px;
+  width: 280px;
+  border-radius: 10px;
+  z-index: 1;
+  -webkit-filter: drop-shadow(3px 3px 3px var(--light-gray) );
+  filter: drop-shadow(3px 3px 3px var(--light-gray) );
 }
 
 footer {
@@ -60,21 +179,22 @@ footer {
   width: 100%;
   height: 50px;
   padding: 12px;
-  background: var(--dark-color);
-  color: var(--light-color);
+  border-top: 1px solid var(--light-gray);
+  background: transparent;
+  color: var(--light);
   text-align: center;
 }
 
 footer p a {
   font-weight: 400;
-  color: var(--success-color);
+  color: var(--green);
 }
 
 footer p a:hover {
   cursor: pointer;
-  border-bottom: 1px solid var(--success-color);
+  border-bottom: 1px solid var(--green);
 }
 
 footer p a:visited {
-  color: var(--success-color);
+  color: var(--green);
 }

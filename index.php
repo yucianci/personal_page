@@ -5,22 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuri Cianci</title>
+  <title>Yuri F. Cianci</title>
   <link rel="stylesheet" href="./styles.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <nav>
-      <div class="navbar left">
-        <li>
-          <a href="index.php?page=home">
-            Yuri Fuzifaru Cianci
-          </a>
-        </li>
-      </div>
-      <div class="navbar right">
+      <ul>
         <li>
           <a href="index.php?page=about">
             Sobre
@@ -41,13 +34,13 @@
             Currículo
           </a>
         </li>
-      </div>
+      </ul>
     </nav>
   </header>
   <main>
     <?php
     include "data.php";
-    $page = $_GET["page"] ?? "home";
+    $page = $_GET["page"] ?? "about";
     $file = "pages/{$page}.php";
     if (file_exists($file)) {
       include($file);
@@ -57,9 +50,9 @@
     ?>
   </main>
   <footer>
-    <p>Development by
+    <p>Desenvolvido por
       <a href="https://www.instagram.com/yucianci/" target="_blank" rel="noreferrer">
-        Yuri
+        Yuri Cianci
       </a>
       🥶
     </p>
