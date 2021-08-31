@@ -4,8 +4,11 @@ foreach ($profile as $data) {
   $description = $data['description'];
   $carrer = $data['carrer'];
   $github = $data['github'];
+  $url_github = $data['url_github'];
   $linkedin = $data['linkedin'];
+  $url_linkedin = $data['url_linkedin'];
   $instagram = $data['instagram'];
+  $url_instagram = $data['url_instagram'];
 }
 echo "
   <div class='about__content'>
@@ -15,25 +18,20 @@ echo "
       <div class='description'>
         <p>{$description}</p>
         <div class='description__icons'>  
-          <button>
-            <img src='{$github}'>
-          </button>
-          <button>
-            <img src='{$linkedin}'>
-          </button>
-          <button>
-            <img src='{$instagram}'>
-          </button>
+          <a href='{$url_github}' target='_blank'>
+            <img src='{$github}' title='Github' width='28'>
+          </a>
+          <a href='{$url_linkedin}' target='_blank'>
+            <img src='{$linkedin}' title='Linkedin' width='28'>
+          </a>
+          <a href='{$url_instagram}' target='_blank'>
+            <img src='{$instagram}' title='Instagram' width='28'>
+          </a>
         </div>
       </div>
     </section>
     <section class='profile'>
-      <div class='profile__border'>
-        <div class='geometry left'></div>
-        <div class='geometry top'></div>
-        <div class='geometry right'></div>
-        <div class='geometry bottom'></div>
-      </div>
+      <div class='profile__border'></div>
       <img class='profile__image'  src='{$image}'>
     </section>
   </div>
