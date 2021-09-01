@@ -6,16 +6,18 @@ foreach ($hobby as $data) {
   $text_book = $data['text-book'];
   $image_dev = $data['img-dev'];
   $text_dev = $data['text-dev'];
+  $image_music = $data['img-music'];
+  $text_music = $data['text-music'];
 }
 echo "
   <div class='hobby__content'>
     <section>
-    <p class='hobby__title'>Jogos</p>
+    <p class='hobby__title'>Jogar vídeo-games</p>
     <img src='{$image_gamer}'>
     <p class='hobby__text'>{$text_gamer}</p>
     </section>
     <section>
-    <p class='hobby__title'>Livros</p>
+    <p class='hobby__title'>Ler livros</p>
     <img src='{$image_book}'>
     <p class='hobby__text'>{$text_book}</p>
     </section>
@@ -23,6 +25,11 @@ echo "
     <p class='hobby__title'>Programar</p>
     <img src='{$image_dev}'>
     <p class='hobby__text'>{$text_dev}</p>
+    </section>
+    <section>
+    <p class='hobby__title'>Ouvir músicas</p>
+    <img src='{$image_music}'>
+    <p class='hobby__text'>{$text_music}</p>
     </section>
     
   </div>

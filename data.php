@@ -39,5 +39,12 @@ $hobby[1] = array(
   tecnológicos utilizadas em diversas esferas sociais, da mobilidade urbana a
   aplicações médicas, tudo acaba envolve as tecnologias da informação e consequentemente
   a programação, que é e será por um bom tempo ainda essencial para o avanço dessas
-  tecnologias e também para a utilização delas."
+  tecnologias e também para a utilização delas.",
+  "img-music" =>  "./assets/music.jpg",
+  "text-music" => "A música é reconhecida por muitos pesquisadores como uma modalidade
+  que desenvolve a mente humana, promove o equilíbrio, proporcionando um estado
+  agradável de bem-estar, facilitando a concentração e o desenvolvimento do raciocínio,
+  em especial em questões reflexivas voltadas para o pensamento. A música penetra
+  diretamente em nossos centros nervosos e coordena mentalmente, de maneira rápida e
+  imediata, a divisão do tempo e do espaço, além de inspirar o gosto pelas virtudes."
 );
