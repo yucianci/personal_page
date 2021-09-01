@@ -6,6 +6,7 @@
   --light-gray: rgba(119, 119, 119, 0.514);
   --light: #d1d1d1;
   --green: #27ae60;
+  --dark-green: #2a533a;
 }
 
 * {
@@ -61,6 +62,10 @@ header li a {
   padding: 0 22px;
 }
 
+.active {
+  color: var(--green);
+}
+
 header li a::after {
   content: "";
   width: 0%;
@@ -78,7 +83,7 @@ header li a:hover::after {
 }
 
 main {
-  height: 85%;
+  height: 92%;
 }
 
 .about__content {
@@ -162,7 +167,6 @@ main {
 }
 
 .hobby__content {
-  height: 85%;
   padding: 24px 120px;
   display: flex;
   align-items: center;
@@ -200,7 +204,7 @@ main {
 }
 
 .hobby__content section img {
-  width: 200px !important;
+  min-width: 200px !important;
   height: 125px;
   border-radius: 12px;
   filter: drop-shadow(3px 3px 3px #2a533a);
@@ -212,6 +216,25 @@ main {
   color: #fff;
   line-height: 1.5rem;
   word-spacing: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 3px 3px 3px var(--light-gray);
+  background: var(--dark); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-green); 
 }
 
 footer {
