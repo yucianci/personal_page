@@ -25,13 +25,13 @@
           </a>
         </li>
         <li>
-          <a href="index.php?page=contact">
-            Contato
+          <a href="index.php?page=curriculum">
+            Currículo
           </a>
         </li>
         <li>
-          <a href="index.php?page=curriculum">
-            Currículo
+          <a href="index.php?page=contact">
+            Contato
           </a>
         </li>
       </ul>
