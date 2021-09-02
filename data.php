@@ -48,3 +48,18 @@ $hobby[1] = array(
   diretamente em nossos centros nervosos e coordena mentalmente, de maneira rápida e
   imediata, a divisão do tempo e do espaço, além de inspirar o gosto pelas virtudes."
 );
+
+$contact[1] = array(
+  "id" => 1,
+  "img" => "https://media.giphy.com/media/gh0RRgkTXedvF0pDc0/giphy.gif",
+  "description" => "Caso esteja interessado em minhas habilidades ou talvez
+  apenas trocar um papo, só me chamar pelas plataformas citadas abaixo, ficarei feliz em repondê-lo 🤘",
+  "github" => "./assets/github.png",
+  "url_github" => "https://github.com/yucianci",
+  "linkedin" => "./assets/linkedin.png",
+  "url_linkedin" => "https://linkedin.com/in/yuricianci/",
+  "instagram" => "./assets/instagram.png",
+  "url_instagram" => "https://instagram.com/yucianci/",
+);
+
+
