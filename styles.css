@@ -252,13 +252,14 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--green);
+  background: #636e72;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--dark-green);
+  background: #636e72;
 }
+
 
 footer {
   display: flex;
