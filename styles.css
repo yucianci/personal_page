@@ -84,7 +84,7 @@ header li a:hover::after {
 }
 
 main {
-  height: 92%;
+  height: 85%;
 }
 
 .about__content {
@@ -241,6 +241,53 @@ main {
   border-radius: 20px 80px 20px 80px;
 }
 
+.curriculum__content {
+  padding: 0% 15% 4%;
+  line-height: 1.5rem;
+  word-spacing: .4rem;
+  color: #fff;
+}
+
+.curriculum__description {
+  position: relative;
+  border: 1px dashed var(--light-gray);
+  padding: 2.5%;
+  margin-top: 4%;
+  transition: all .4s;
+}
+
+.curriculum__description:hover {
+  border: 1px solid var(--green);
+  box-shadow: 2px 2px 2px 1px rgba(119, 119, 119, 0.432);
+}
+
+.curriculum__description p{
+  position: absolute;
+  top: -13px;
+  padding: 0 8px;
+  background: var(--dark);
+  transition: all .1s;
+}
+
+.curriculum__description:hover p {
+  transform: scale(1.15);
+}
+
+.curriculum__description > strong {
+  font-size: .85rem;
+  word-spacing: .1rem;
+}
+
+.curriculum__description h4 {
+  color: var(--green);
+  word-spacing: .1rem;
+}
+
+.curriculum__description h4 strong {
+  color: #fff;
+  word-spacing: .1rem;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -259,7 +306,6 @@ main {
 ::-webkit-scrollbar-thumb:hover {
   background: #636e72;
 }
-
 
 footer {
   display: flex;
