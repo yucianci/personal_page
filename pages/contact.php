@@ -13,7 +13,7 @@ echo "
   <div class='about__content'>
     <section>
       <div class='description'>
-        <p class='about__carrer'>Espero que tenha gostado do meu site pessoal!</p>
+        <p class='about__carrer'>Espero que tenha gostado do meu portfólio!</p>
         <br/>
         <p>{$description}</p>
         <br/>

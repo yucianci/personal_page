@@ -59,7 +59,23 @@ $contact[1] = array(
   "linkedin" => "./assets/linkedin.png",
   "url_linkedin" => "https://linkedin.com/in/yuricianci/",
   "instagram" => "./assets/instagram.png",
-  "url_instagram" => "https://instagram.com/yucianci/",
+  "url_instagram" => "https://instagram.com/yucianci/"
 );
 
-
+$curriculum[1] = array(
+  "id" => 1,
+  "description" => "Meu nome é Yuri Fuzifaru Cianci, tenho 20 anos e comecei a programar aos 17 anos com as
+  linguagens de programação Java e PHP.
+  Mas comecei a estudar pra valer, quando conheci a linguagem JavaScript em 2020 que foi um ano
+  chave para minha carreira como desenvolvedor Web.
+  Me dedico todos os dias para aprender cada vez mais desse mundo da programação, e graças a isso,
+  hoje tenho como principais tecnologias o HTML, CSS, JavaScript, TypeScript, React, Git e GitHub.
+  Atualmente sou desenvolvedor front-end com o objetivo de se tornar desenvolvedor FullStack.
+  Estou sempre apto a aprender novas tecnologias e aprendizados!",
+  "experience" => "Desenvolvedor Front-end, utilizando como principais tecnologias: HTML, CSS, SASS, JavaScript, React JS,
+  TypeScript, Git e GitHub. ",
+  "school" => "Tecnologias adquiridas: HTML, CSS, Java, PHP, JavaScript, MYSQL.
+  Na finalização do curso técnico, apresentei um sistema web como TCC (website com foco em doações
+  para ONG’s), utilizando as tecnologias: HTML, CSS, JavaScript, Angular JS e FireBird.",
+  "university" => "Tecnologias adquiridas: HTML, CSS, Java, PHP, JavaScript, MYSQL."
+);
